@@ -1,0 +1,84 @@
+# Node modules
+node_modules/
+**/node_modules/
+
+# Logs
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# Build outputs
+dist/
+build/
+out/
+release/
+public/build/
+
+# Next.js
+.next/
+out/
+
+# TypeScript
+*.tsbuildinfo
+
+# Coverage
+coverage/
+.nyc_output/
+
+# Environment variables
+.env
+.env.*
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# Docker
+.dockerignore
+docker-compose.override.yml
+
+# Editors and IDEs
+.vscode/
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+
+# OS generated files
+.DS_Store
+Thumbs.db
+
+# Caches
+.cache/
+.parcel-cache/
+.next/cache
+node-repl-history
+
+# Temporary files
+tmp/
+temp/
+*.tmp
+
+# Misc
+*.seed
+*.pid
+*.pid.lock
+
+# Ignore compiled/local artifacts
+**/dist/
+**/build/
+
+# Test artifacts
+coverage/
+jest-dom-debug.log
+
+# JetBrains
+/.idea/
+
+# Windows
+desktop.ini
+

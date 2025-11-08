@@ -8,20 +8,28 @@ A full-stack todo list application with Next.js (TypeScript) frontend, Express.j
 todo-app/
 ├── backend/
 │   ├── src/
+│   │   ├── __tests__/
+│   │   │   └── api.test.ts
+│   │   ├── app.ts
 │   │   └── server.ts
 │   ├── package.json
 │   ├── tsconfig.json
+│   ├── jest.config.js
 │   ├── .env
 │   ├── Dockerfile
 │   └── .dockerignore
 ├── frontend/
 │   ├── app/
+│   │   ├── __tests__/
+│   │   │   └── page.test.tsx
 │   │   ├── page.tsx
 │   │   ├── layout.tsx
 │   │   └── globals.css
 │   ├── next.config.js
 │   ├── package.json
 │   ├── tsconfig.json
+│   ├── jest.config.js
+│   ├── jest.setup.js
 │   ├── .env.local
 │   ├── Dockerfile
 │   └── .dockerignore
@@ -37,6 +45,8 @@ todo-app/
 - Persistent storage with PostgreSQL
 - Responsive UI
 - Fully containerized with Docker
+- Comprehensive unit tests for frontend and backend
+- TypeScript for type safety
 
 ## Prerequisites
 
@@ -88,6 +98,26 @@ npm install
 npm run dev
 ```
 
+### Running Tests
+
+**Backend Tests:**
+```bash
+cd backend
+npm install
+npm test              # Run tests once
+npm run test:watch    # Run tests in watch mode
+npm run test:coverage # Run tests with coverage report
+```
+
+**Frontend Tests:**
+```bash
+cd frontend
+npm install
+npm test              # Run tests once
+npm run test:watch    # Run tests in watch mode
+npm run test:coverage # Run tests with coverage report
+```
+
 ### Environment Variables
 
 **Backend (.env):**
@@ -117,4 +147,5 @@ docker-compose down -v
 - **Frontend:** Next.js 14, React 18, TypeScript
 - **Backend:** Express.js, Node.js, TypeScript
 - **Database:** PostgreSQL 15
+- **Testing:** Jest, React Testing Library, Supertest
 - **Containerization:** Docker, Docker Compose
